@@ -1,0 +1,22 @@
+header {width: 100vw;
+  .top_header {}
+  .bottom_header {
+    .left_menu {
+      li {
+        span {font-size:1.7rem; font-weight: 500;}
+      }
+    }
+    .right_menu {
+      li {
+        span {font-size:1.6rem;}
+        i {font-size: 1.4rem;}
+        &.down_center {background: #000000;
+          span {color:#ffffff;}
+        }
+        &.item_reg {background: #dc000c;
+          span {color:#ffffff;}
+        }
+      }
+    }
+  }
+}
