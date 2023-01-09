@@ -34,8 +34,8 @@ const Header = () => {
               </div>
             </li>
             {Array.LeftMenuArray.map((menu, index) =>
-              <li key={index}>
-                <span>{menu.title}</span>
+              <li key={index} className="flex">
+                <span className="flex flex_ai_c">{menu.title}</span>
                 {menu.drop_depth_1.length >= 1 ? 
                   (
                     <div className="drop_menu_section absolute con">
@@ -55,7 +55,7 @@ const Header = () => {
               </li>
             )}
           </ul>
-          <ul className="right_menu flex flex_jc_e flex_ai_fe">
+          <ul className="right_menu flex flex_jc_e flex_ai_c">
             {Array.RightMenuArray.map((menu, index) =>
               <li className="flex flex_ai_fe" key={index}>
               <span>{menu.title}</span>

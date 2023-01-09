@@ -1,7 +1,7 @@
-.fixed_menu {right:2%; padding:1rem 2rem; background:#ffffff; border-radius: 10px; border:1px solid red;
+.fixed_menu {bottom:10%; right:2%; padding:1rem 2rem; background:#ffffff; border-radius: 10px; z-index: 2;
   ul {
-    li {margin-bottom:1.6rem;
-      .sub_tit {font-size:1.3rem; font-weight: 500;}
+    li {margin-top:1.6rem;
+      .sub_tit {font-size:1.3rem; font-weight: 500; font-family: "NotoKr";}
     }
   }
 }
