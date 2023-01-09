@@ -7,9 +7,10 @@ const Header = () => {
     drop_menu.classList.add('active');
     //  onMouseEnter={hoverToggleEvent}
   }
+  console.log(Array.LeftMenuArray)
   return(
     <header className="fixed">
-      <div className="con">
+      <div className="con relative">
         <div className="top_header">
           <ul className="flex flex_jc_e">
             <li className="search_btn">
@@ -35,6 +36,22 @@ const Header = () => {
             {Array.LeftMenuArray.map((menu, index) =>
               <li key={index}>
                 <span>{menu.title}</span>
+                {menu.drop_depth_1.length >= 1 ? 
+                  (
+                    <div className="drop_menu_section absolute con">
+                      <ul>
+                        {menu.drop_depth_1.map((menu, index) =>
+                          <li key={index}>
+                            {menu.title}
+                          </li>
+                        )}
+                      </ul>
+                    </div>
+                  )
+                : null}
+                
+                  
+                
               </li>
             )}
           </ul>
@@ -42,7 +59,7 @@ const Header = () => {
             {Array.RightMenuArray.map((menu, index) =>
               <li className="flex flex_ai_fe" key={index}>
               <span>{menu.title}</span>
-              <span className="flex flex_ai_fe">
+              <span className="icon_box flex flex_ai_fe">
                 <img src={images.link_icon} alt=""/>
               </span>
             </li>
