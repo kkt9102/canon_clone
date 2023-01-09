@@ -1,19 +1,36 @@
-header {width: 100vw;
-  .top_header {}
-  .bottom_header {
-    .left_menu {
-      li {
-        span {font-size:1.7rem; font-weight: 500;}
+header {width: 100vw; background:#eeeeee;
+  * {font-family: "NotoKr";}
+  .top_header {
+    ul {margin:1rem 0 0 0;
+      li {font-size:1.4rem;
+        &.search_btn {margin-right:2rem;}
+        &.login_btn {padding:0 1.5rem;
+          ::after {content:""; position: absolute; width: 1px; height:1rem; top:25%; right:calc(1.4rem/2); background:#dddddd;}
+        }
       }
     }
-    .right_menu {
-      li {
-        span {font-size:1.6rem;}
+  }
+  .bottom_header {padding-bottom:1rem;
+    .left_menu {flex-basis:50%;
+      li {margin:0 2rem;
+        span {position: relative; font-size:1.7rem; font-weight: 600; cursor:pointer;
+          &::after {content:""; position:absolute; width:100%; height: 0.5rem; bottom:-2rem; left:0; background:none;}
+          &.active::after {background: #dc000c;}
+        }
+        &:hover span::after {background: #dc000c;}
+        &.logo {flex-basis:11.5rem; padding-bottom: 0;
+          img {max-width: 100%; width: 100%;}
+        }
+      }
+    }
+    .right_menu {flex-basis: 50%;
+      li {margin:0 2rem;
+        span {font-size:1.4rem; font-weight: 600;}
         i {font-size: 1.4rem;}
-        &.down_center {background: #000000;
+        &.down_center {padding:0.5rem 1rem; margin:0 0.4rem; background: #000000; border-radius: 3px;
           span {color:#ffffff;}
         }
-        &.item_reg {background: #dc000c;
+        &.item_reg {padding: 0.5rem 1.3rem; margin:0 0.4rem; background: #dc000c; border-radius: 3px;
           span {color:#ffffff;}
         }
       }
