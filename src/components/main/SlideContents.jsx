@@ -23,28 +23,28 @@ const SlideContents = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="img_box">
+          <div className="slide_items img_box">
             <img src={images.contents1} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>
-          <div className="img_box">
+          <div className="slide_items img_box">
             <img src={images.contents3} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="img_box">
+          <div className="slide_items img_box">
             <img src={images.contents4} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="img_box">
+          <div className="slide_items img_box">
             <img src={images.contents5} alt=""/>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="img_box">
+          <div className="slide_items img_box">
             <img src={images.contents6} alt=""/>
           </div>
         </SwiperSlide>

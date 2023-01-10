@@ -1,1 +1,6 @@
-.mySwiper {padding-top:10rem;}
+.mySwiper {padding-top:10rem;
+  .slide_items {position:relative;
+    .tit {position:absolute; font-size:6.6rem;}
+    .sub_tit {position: absolute;}
+  }
+}

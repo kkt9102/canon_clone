@@ -1,5 +1,5 @@
-.fixed_menu {bottom:10%; right:2%; padding:1rem 2rem; background:#ffffff; border-radius: 10px; z-index: 2;
-  ul {
+.fixed_menu {bottom:10%; right:2%; padding:0.5rem 2rem; background:#ffffff; border-radius: 10px; z-index: 2;
+  ul {max-width:5.5rem;
     li {margin-top:1.6rem;
       .sub_tit {font-size:1.3rem; font-weight: 500; font-family: "NotoKr";}
     }
