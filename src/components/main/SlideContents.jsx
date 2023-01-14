@@ -1,13 +1,13 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
+import SlideArray from "../../Array/SlideItem";
 
 import images from "../../resources/img/img";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
 import "../../resources/css/swiper/styles.css";
 
 
@@ -22,32 +22,17 @@ const SlideContents = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="slide_items img_box">
-            <img src={images.contents1} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>
-          <div className="slide_items img_box">
-            <img src={images.contents3} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide_items img_box">
-            <img src={images.contents4} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide_items img_box">
-            <img src={images.contents5} alt=""/>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="slide_items img_box">
-            <img src={images.contents6} alt=""/>
-          </div>
-        </SwiperSlide>
+        {SlideArray.SlideContentsArray.map((item, index) =>
+          <SwiperSlide key={index}>
+            <div className="slide_items img_box">
+              <img src={item.img} alt=""/>
+              <div className="txt_box absolute" style={{color:`${item.color}`}}>
+                <div className="sub_tit">{item.sub_title}</div>
+                <div className="tit">{item.title}</div>
+              </div>
+            </div>
+          </SwiperSlide>
+        )}
       </Swiper>
     </>
   );

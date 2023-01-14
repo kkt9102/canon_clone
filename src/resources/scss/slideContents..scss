@@ -1,6 +1,8 @@
 .mySwiper {padding-top:10rem;
   .slide_items {position:relative;
-    .tit {position:absolute; font-size:6.6rem;}
-    .sub_tit {position: absolute;}
+    .txt_box {width:120rem; top:25%; left:calc((100% - 120rem)/2); padding:0 4%; z-index: 100;
+      .tit {margin-top:3%; font-size:6.6rem; font-weight: 900; text-align:left; white-space: pre; letter-spacing: -1px; line-height: 1.2;}
+      .sub_tit {position: absolute; font-size:1.9rem; font-weight: 500; letter-spacing: -1px;}
+    }
   }
 }

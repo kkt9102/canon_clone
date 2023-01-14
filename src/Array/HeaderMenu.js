@@ -115,8 +115,8 @@ const RightMenuArray = [
     title: "아카데미"
   }
 ];
-const Array = {
+const MenuArray = {
   LeftMenuArray,
   RightMenuArray
 }
-export default Array;
+export default MenuArray;

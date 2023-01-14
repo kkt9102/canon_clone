@@ -1,5 +1,5 @@
 import images from "../../resources/img/img";
-import Array from "../../Array/HeaderMenu";
+import MenuArray from "../../Array/HeaderMenu";
 
 const Header = () => {
   const hoverToggleEvent = (e) => {
@@ -7,7 +7,6 @@ const Header = () => {
     drop_menu.classList.add('active');
     //  onMouseEnter={hoverToggleEvent}
   }
-  console.log(Array.LeftMenuArray)
   return(
     <header className="fixed">
       <div className="con relative">
@@ -33,7 +32,7 @@ const Header = () => {
                 <img src={images.logo} alt=""/>
               </div>
             </li>
-            {Array.LeftMenuArray.map((menu, index) =>
+            {MenuArray.LeftMenuArray.map((menu, index) =>
               <li key={index} className="flex">
                 <span className="flex flex_ai_c">{menu.title}</span>
                 {menu.drop_depth_1.length >= 1 ? 
@@ -56,7 +55,7 @@ const Header = () => {
             )}
           </ul>
           <ul className="right_menu flex flex_jc_e flex_ai_c">
-            {Array.RightMenuArray.map((menu, index) =>
+            {MenuArray.RightMenuArray.map((menu, index) =>
               <li className="flex flex_ai_fe" key={index}>
               <span>{menu.title}</span>
               <span className="icon_box flex flex_ai_fe">
