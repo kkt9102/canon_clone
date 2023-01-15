@@ -3,37 +3,43 @@ import images from "../resources/img/img"
 const SlideContentsArray = [
   {
     img: `${images.contents1}`,
-    title: "KCSI 복합기 전부문 \n고객만족도 1위",
     color: "#ffffff",
+    link: true,
+    title: "KCSI 복합기 전부문 \n고객만족도 1위",
     sub_title: ""
   },
   {
     img: `${images.contents1}`,
+    link: false,
     title: "KCSI 복합기 전부문 \n고객만족도 1위",
     sub_title: ""
   },
   {
     img: `${images.contents3}`,
-    title: "imageRUNNER\nADVANCE DX\n4800 Series",
     color: "#ffffff",
+    link: true,
+    title: "imageRUNNER\nADVANCE DX\n4800 Series",
     sub_title: "스마트한 업무환경을 가능케하는 업무 혁신의 시작"
   },
   {
     img: `${images.contents4}`,
-    title: "EOS R6 Mark II \n출시기념 프로모션",
     color: "#ffffff",
+    link: true,
+    title: "EOS R6 Mark II \n출시기념 프로모션",
     sub_title: "풀프레임 미러리스의 새로운 기"
   },
   {
     img: `${images.contents5}`,
-    title: "imageRUNNER \n2700 Series",
     color: "#ffffff",
+    link: true,
+    title: "imageRUNNER \n2700 Series",
     sub_title: "스마트하고 합리적인 오피스 환경을 선사하다"
   },
   {
     img: `${images.contents6}`,
-    title: "미키와 친구들 캐릭터 \n한정판 패키지",
     color: "#000000",
+    link: true,
+    title: "미키와 친구들 캐릭터 \n한정판 패키지",
     sub_title: "올 겨울 선물 추천템!"
   },
 ];
