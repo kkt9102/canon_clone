@@ -8,22 +8,34 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../../resources/css/swiper/styles.css";
 
-const Dotted = ({item}) => {
-  const rendering = () => {
+const DottedCustom = (dots) => {
+  // const dots = SlideArray.SlideDotted;
+  const rendering = (dots) => {
+    console.log(dots)
     const result = [];
-    // for (i = 0; i < item.length; i++) {
-      
-    // }
-  }
-}
+    for(let i = 0; i < dots.length; i++) {
+      result.push(
+        <>{dots.text}</>
+      )
+    }
+    return result;
+  } 
+  return <>{rendering()}</>;
+};
 
 const SlideContents = () => {
+  const dots = SlideArray.SlideDotted.text;
+
   const pagination = {
     clickable: true,
     renderBullet: 
-    
     function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
+      return '<div class="' + className + '">' 
+        + '<div class="dot_text">' 
+          + (dots)
+        + '</div>'
+        + '<div class="progress_bar"></div>'
+      +"</div>";
     },
   };
 
