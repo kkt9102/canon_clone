@@ -15,7 +15,13 @@ import contents3 from "./slide_contents/1664148526877_HluwWimHEP.jpg";
 import contents4 from "./slide_contents/1669597791424_mSUOUb5EhP.jpg";
 import contents5 from "./slide_contents/1664148633536_XAYfHh1E2k.jpg";
 import contents6 from "./slide_contents/1670459949539_A4XBwIDojn.jpg";
-
+// solution_contents
+import solution1 from "./solution_contents/1663894801204_njVC6vmrLq.jpg";
+import solution2 from "./solution_contents/1669968064190_YpP0rGt0Ks.jpg";
+import solution3 from "./solution_contents/1671062204421_1FAjNnR9RH.png";
+import solution4 from "./solution_contents/1670977483106_MIE7WRSV8w.jpg";
+import solution5 from "./solution_contents/1663895485891_bxTSTiyY1W.jpg";
+import solution6 from "./solution_contents/1664147295036_YotyNrYEbH.jpg";
 // card_list
 import card_pro from "./card_list/1663896433404_wukSIMfdQs.png";
 import card_creative from "./card_list/1663896490981_7fEYitgixz.png";
@@ -39,7 +45,13 @@ const images = {
   contents4,
   contents5,
   contents6,
-
+  // solution_contents
+  solution1,
+  solution2,
+  solution3,
+  solution4,
+  solution5,
+  solution6,
   // card_list
   card_pro,
   card_creative,
